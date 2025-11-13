@@ -1,0 +1,48 @@
+userName: sarthaksharma_ABjLkx
+accessKey: wLyaawCUyyR3TNmtzZZm
+framework: testng
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: Chrome
+    browserVersion: 136.0
+  - os: OS X
+    osVersion: Monterey
+    browserName: Safari
+    browserVersion: 15.6
+#  - deviceName: iPhone 13
+#    osVersion: 15
+#    browserName: Chromium
+#    deviceOrientation: portrait
+
+parallelsPerPlatform: 3
+browserstackAutomation: true
+#browserstackLocal: true
+#buildName: Ecomm Build - #${BUILD_NUMBER}
+#projectName: Ecomm_Demo
+#sessionName: ${test_name}
+buildName: E-com Demo
+projectName: E-com Project - CDI
+#sessionName: ${test_name}
+networkLogs: false
+consoleLogs: info
+percy: false
+percyCaptureMode: auto
+accessibility: true
+accessibilityOptions:
+  wcagVersion: wcag21aaa # Default: wcag21aa
+  includeIssueType:
+    bestPractice: true # Default: false
+    needsReview: true # Default: true
+    experimental: true # Default: true
+testOrchestrationOptions:
+  retryTestsOnFailure:
+    enabled: true
+    maxRetries: 5
+  runSmartSelection:
+    enabled: true
+    mode: relevantFirst
+  runPreviouslyFailedFirst: true
+  rerunPreviouslyFailed: true
+#performance: assert
+#browserProfiling: true

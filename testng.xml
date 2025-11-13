@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="E-commerce Demo Suite" verbose="1">
+    <test name="BrowserStack Demo Tests">
+        <classes>
+            <class name="com.browserstack.tests.BrowserStackDemoTests"/>
+        </classes>
+    </test>
+</suite>
